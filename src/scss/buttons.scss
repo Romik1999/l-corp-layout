@@ -6,34 +6,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 15px 30px;
   height: 60px;
   box-sizing: border-box;
+  border-radius: 100px;
 
-  border-radius: 5px;
-
-  font-weight: 900;
-  font-size: 20px;
-  line-height: 120%;
+  font-family: Exo 2;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 
   transition: 0.3s;
   white-space: nowrap;
-
-  backdrop-filter: blur(2px);
   position: relative;
 
-  @media screen and (max-width: 1441px) {
-    font-size: 18px;
-    height: 55px;
-  }
-
-  @media screen and (max-width: 992px) {
-    font-size: 16px;
-    height: 50px;
-    padding: 10px;
-  }
-
-  &:focus{
+  &:focus {
     outline: none;
+  }
+
+  &--green {
+    background: $green;
+    color: #121215;
+
+    &:hover{
+      background: lighten($green, 10%);
+    }
   }
 }

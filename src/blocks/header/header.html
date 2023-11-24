@@ -1,7 +1,9 @@
 <header class="header">
     <div class="cont">
         <div class="header__wrapper">
-            <div class="header__logo"></div>
+            <div class="header__logo">
+                @@include('logo/logo.html')
+            </div>
             <div class="header__phone">
                 <a class="phone" href="tel:8 (800) 500 07 33">
                     <img src="./img/header/phone-icon.svg" alt="phone-icon">
@@ -10,20 +12,14 @@
 
             </div>
             <div class="header__menu">
-                <nav class="menu">
-                    <ul class="menu__items">
-                        <li class="menu__item"><a class="menu__link" href="#">Разработка</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Маркетинг</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Дизайн</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Другие услуги</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">О компании</a></li>
-                    </ul>
-                </nav>
+                @@include('menu/menu.html')
             </div>
-            <div class="header__button">Заказать проект</div>
+            <div class="header__button btn btn--green">Заказать проект</div>
             <div class="header__hamburger">
                 @@include('hamburger/hamburger.html')
             </div>
         </div>
     </div>
 </header>
+
+@@include('mobile-slide/mobile-slide.html')
