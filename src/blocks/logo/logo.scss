@@ -16,5 +16,11 @@
     @media screen and (max-width: 1025px) {
       height: 60px;
     }
+    @media screen and (max-width: 769px) {
+      height: 30px;
+    }
+    @media screen and (max-width: 327px) {
+      height: 25px;
+    }
   }
 }
