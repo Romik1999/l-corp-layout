@@ -1,0 +1,167 @@
+@import "../../scss/colors.scss";
+
+.top {
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 1025px) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
+  }
+
+  &__items {
+    display: flex;
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1025px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    height: 33.33vw;
+    max-height: 600px;
+    background: #090909;
+
+    @media screen and (max-width: 769px) {
+      height: calc(100vw - 20px);
+      max-height: 360px;
+    }
+  }
+
+  &-item {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:hover {
+      & .top-item__wrapper {
+        background: rgba(0, 0, 0, 0.25);
+        padding-bottom: 48px;
+
+        @media screen and (max-width: 1025px) {
+          padding-bottom: 30px;
+        }
+      }
+
+      & .top-item__img {
+        transform: scale(1.05);
+      }
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      z-index: 1;
+      transition: 0.3s;
+
+      @media screen and (max-width: 769px) {
+        object-fit: contain;
+        object-position: right bottom;
+      }
+
+
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__wrapper {
+      position: relative;
+      z-index: 2;
+      box-sizing: border-box;
+      padding-top: 48px;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-bottom: 75px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.50);
+      transition: 0.2s;
+
+      @media screen and (max-width: 1025px) {
+        padding-top: 30px;
+        padding-left: 38px;
+        padding-right: 15px;
+        padding-bottom: 38px;
+      }
+    }
+
+    &__title {
+      color: $white;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 14px;
+
+      @media screen and (max-width: 1025px) {
+        font-size: 22px;
+      }
+    }
+
+    &__subtitle {
+      color: $white;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      @media screen and (max-width: 1025px) {
+        font-size: 16px;
+      }
+
+      & span {
+        color: $green;
+      }
+    }
+
+    &__price {
+      color: $white;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-top: auto;
+      margin-bottom: 0;
+
+      @media screen and (max-width: 1025px) {
+        font-size: 18px;
+      }
+
+      & span {
+        &:last-child {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  &__button {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 769px) {
+      width: calc(100% - 40px);
+      max-width: 450px;
+    }
+  }
+
+
+  @media screen and (max-width: 769px) {
+  }
+}

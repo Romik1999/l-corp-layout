@@ -38,6 +38,18 @@
   background: #dbff17;
 }
 
+.btn--transparent {
+  border-radius: 100px;
+  border: 1px solid #858585;
+  background: transparent;
+  color: #ffffff;
+}
+
+.btn--transparent:hover {
+  background: #858585;
+  color: #1B1B1B;
+}
+
 @media screen and (max-width: 769px) {
   .btn {
     padding: 10px 16px;

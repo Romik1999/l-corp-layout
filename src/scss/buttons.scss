@@ -38,4 +38,16 @@
       background: lighten($green, 10%);
     }
   }
+
+  &--transparent{
+    border-radius: 100px;
+    border: 1px solid #858585;
+    background: transparent;
+    color: $white;
+
+    &:hover{
+      background: #858585;
+      color: #1B1B1B;
+    }
+  }
 }
