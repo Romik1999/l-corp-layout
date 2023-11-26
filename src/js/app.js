@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     let burger = document.querySelector('.hamburger');
-    let mobile = document.querySelector('.mobile');
+    let mobile = document.querySelector('.mobile-slide');
     burger.addEventListener('click', () => {
         if (burger.classList.contains('active')) {
             burger.classList.remove('active');

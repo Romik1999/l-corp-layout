@@ -15,7 +15,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 100px;
-  font-family: Exo 2;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -37,4 +36,12 @@
 
 .btn--green:hover {
   background: #dbff17;
+}
+
+@media screen and (max-width: 769px) {
+  .btn {
+    padding: 10px 16px;
+    height: 40px;
+    font-size: 16px;
+  }
 }

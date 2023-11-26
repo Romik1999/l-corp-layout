@@ -26,3 +26,15 @@
     height: 60px;
   }
 }
+
+@media screen and (max-width: 769px) {
+  .logo svg {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .logo svg {
+    height: 25px;
+  }
+}

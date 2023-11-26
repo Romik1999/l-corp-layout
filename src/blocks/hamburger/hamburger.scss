@@ -17,16 +17,16 @@
 
   &__line {
     position: absolute;
-    left: 50%;
+    left: 16px;
     width: 30px;
     height: 3px;
     transition: 0.2s;
     background-color: $white;
-    transform: translateX(-50%);
 
     @media screen and (max-width: 769px) {
       width: 20px;
       height: 2.5px;
+      left: 10px;
     }
 
     &:nth-child(1) {
@@ -48,19 +48,25 @@
 
   &.active {
     & .hamburger__line {
-      &:nth-child(2) {
-        opacity: 0;
-      }
-
       &:nth-child(1) {
         transform: rotate(-45deg);
         top: 50%;
+        left: 14px;
+
+        @media screen and (max-width: 769px) {
+          left: 9px;
+        }
       }
 
-      &:nth-child(3) {
+      &:nth-child(2) {
         top: 50%;
+        left: 14px;
         transform: rotate(45deg);
         bottom: auto;
+
+        @media screen and (max-width: 769px) {
+          left: 9px;
+        }
       }
     }
   }
