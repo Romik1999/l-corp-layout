@@ -1,0 +1,234 @@
+.cases {
+  padding-bottom: 25px;
+}
+
+.cases__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 18px 1fr 18px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-gap: 18px;
+  margin-bottom: 60px;
+}
+
+.cases__items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.cases__items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.cases__items > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.cases__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 33.33vw;
+  max-height: 560px;
+}
+
+.cases__item.col-1 {
+  -ms-grid-column-span: 1;
+  grid-column: span 1;
+}
+
+.cases__item.col-2 {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.cases-item {
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 54px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cases-item--purple {
+  background: linear-gradient(100deg, #554CAB 3.75%, #726AC4 35.33%, #C49AEE 73.68%, #E29AEE 100%);
+}
+
+.cases-item--red {
+  background: #DF4237;
+}
+
+.cases-item--transparent {
+  background: transparent;
+}
+
+.cases-item--blue {
+  background: #5C74E8;
+}
+
+.cases-item--brown {
+  background: linear-gradient(135deg, #3B2F26 0%, #47301F 0.01%, rgba(217, 130, 66, 0.41) 105.63%);
+}
+
+.cases-item:hover {
+  padding-bottom: 40px;
+}
+
+.cases-item:hover .cases-item__img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.cases-item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.cases-item__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cases-item__title {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.cases-item__subtitle {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 166%;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1500px) {
+  .cases-item {
+    padding-top: 32px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 32px;
+  }
+
+  .cases-item:hover {
+    padding-bottom: 25px;
+  }
+
+  .cases-item__title {
+    font-size: 26px;
+  }
+
+  .cases-item__subtitle {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .cases {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 6px;
+  }
+
+  .cases__items {
+    grid-gap: 5px;
+    margin-bottom: 40px;
+  }
+
+  .cases-item {
+    padding: 27px 20px;
+  }
+
+  .cases-item:hover {
+    padding-bottom: 20px;
+  }
+
+  .cases-item__title {
+    font-size: 22px;
+  }
+
+  .cases-item__subtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .cases-item__title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .cases-item__title {
+    font-size: 18px;
+  }
+
+  .cases-item__subtitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .cases {
+    padding-bottom: 15px;
+  }
+
+  .cases__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 0;
+    row-gap: 10px;
+  }
+
+  .cases__item {
+    height: calc(100vw - 60px);
+    max-height: 400px;
+  }
+
+  .cases-item__img img {
+    -o-object-position: right center;
+       object-position: right center;
+  }
+}
