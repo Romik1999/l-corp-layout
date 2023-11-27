@@ -4,6 +4,13 @@
   padding: 127px 80px;
   background: #1F1F1F;
 
+  @media screen and (max-width: 1025px) {
+    padding: 80px 30px;
+  }
+  @media screen and (max-width: 769px) {
+    padding: 30px 15px;
+  }
+
   &__wrapper {
     max-width: 1680px;
     width: 100%;
@@ -11,6 +18,15 @@
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
+
+    @media screen and (max-width: 1025px) {
+      flex-wrap: wrap;
+      align-items: center;
+      row-gap: 75px;
+    }
+    @media screen and (max-width: 769px) {
+      row-gap: 40px;
+    }
   }
 
   &__title {
@@ -19,23 +35,58 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    @media screen and (max-width: 1025px) {
+      order: 1;
+      width: calc(50% - 15px);
+    }
+    @media screen and (max-width: 769px) {
+      width: 100%;
+    }
   }
 
   &__button {
     width: 280px;
+    min-width: 280px;
     height: 280px;
     border-radius: 50%;
     font-size: 20px;
+
+    @media screen and (max-width: 835px) {
+      width: 240px;
+      min-width: 240px;
+      height: 240px;
+    }
+    @media screen and (max-width: 769px) {
+      width: 200px;
+      min-width: 200px;
+      height: 200px;
+    }
   }
 
   &__contacts {
     display: flex;
     column-gap: 40px;
+
+    @media screen and (max-width: 1025px) {
+      order: 3;
+      width: 100%;
+      column-gap: 30px;
+    }
+    @media screen and (max-width: 769px) {
+      flex-direction: column;
+      row-gap: 45px;
+      align-items: center;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 769px) {
+      width: 100%;
+    }
   }
 
   &__phone {
@@ -46,6 +97,14 @@
     line-height: normal;
     text-decoration: none;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 835px) {
+      font-size: 42px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 36px;
+      margin-bottom: 13px;
+    }
   }
 
   &__mail {
@@ -56,6 +115,13 @@
     line-height: normal;
     text-decoration: none;
     margin-bottom: 15px;
+
+    @media screen and (max-width: 835px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 769px) {
+      font-size: 22px;
+    }
   }
 
   &__address {
@@ -65,6 +131,11 @@
     font-weight: 400;
     line-height: 160%;
     margin-bottom: 60px;
+
+    @media screen and (max-width: 769px) {
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
   }
 
   &__copy {
@@ -73,6 +144,15 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (max-width: 1025px) {
+      order: 2;
+      width: calc(50% - 15px);
+      text-align: right;
+    }
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
   }
 
   @media screen and (max-width: 825px) {
