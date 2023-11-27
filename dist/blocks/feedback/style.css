@@ -28,6 +28,7 @@
 
 .feedback__button {
   width: 280px;
+  min-width: 280px;
   height: 280px;
   border-radius: 50%;
   font-size: 20px;
@@ -87,4 +88,113 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media screen and (max-width: 1025px) {
+  .feedback {
+    padding: 80px 30px;
+  }
+
+  .feedback__wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 75px;
+  }
+
+  .feedback__title {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: calc(50% - 15px);
+  }
+
+  .feedback__contacts {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+
+  .feedback__copy {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: calc(50% - 15px);
+    text-align: right;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .feedback__button {
+    width: 240px;
+    min-width: 240px;
+    height: 240px;
+  }
+
+  .feedback__phone {
+    font-size: 42px;
+  }
+
+  .feedback__mail {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .feedback {
+    padding: 30px 15px;
+  }
+
+  .feedback__wrapper {
+    row-gap: 40px;
+  }
+
+  .feedback__title {
+    width: 100%;
+  }
+
+  .feedback__button {
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+  }
+
+  .feedback__contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 45px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .feedback__info {
+    width: 100%;
+  }
+
+  .feedback__phone {
+    font-size: 36px;
+    margin-bottom: 13px;
+  }
+
+  .feedback__mail {
+    font-size: 22px;
+  }
+
+  .feedback__address {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .feedback__copy {
+    display: none;
+  }
 }

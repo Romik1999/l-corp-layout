@@ -13,48 +13,54 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const problemsSlider = new Swiper('.problems-slider', {
-        loop: false,
-        pagination: {
-            el: '.problems-slider__pagination',
+    // const casesLine = new Swiper('.cases-slider', {
+    //     slidesPerView: 7,
+    //     spaceBetween: 75,
+    //     loop: true,
+    //     breakpoints: {
+    //         300: {
+    //             slidesPerView: 2
+    //         },
+    //         576: {
+    //             slidesPerView: 3
+    //         },
+    //         768: {
+    //             slidesPerView: 5,
+    //             autoplay: {
+    //                 enabled: true,
+    //                 delay: 1,
+    //             },
+    //             speed: 5000,
+    //         },
+    //         1025: {
+    //             slidesPerView: 7
+    //         }
+    //     }
+    // });
+
+    const slider = document.querySelector('.cases-slider');
+    const sl = new Swiper(slider, {
+        loop: true,
+        speed: 5000,
+        slidesPerView: '7',
+        autoplay: {
+            enabled: true,
+            delay: 1,
         },
-        navigation: {
-            nextEl: '.problems-slider__arrow--next',
-            prevEl: '.problems-slider__arrow--prev',
-        },
+        spaceBetween: 40,
         breakpoints: {
             300: {
-                slidesPerView: 1,
-                spaceBetween: 20,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
+                slidesPerView: '2'
             },
             576: {
-                spaceBetween: 15,
-                slidesPerView: 2,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
+                slidesPerView: '3'
             },
-            769: {
-                spaceBetween: 15,
-                slidesPerView: 3,
-                grid: {
-                    rows: 3,
-                    fill: "row"
-                },
+            768: {
+                slidesPerView: '5',
             },
-            1024: {
-                spaceBetween: 24,
-                slidesPerView: 3,
-                grid: {
-                    rows: 3,
-                    fill: "row"
-                },
-            },
+            1025: {
+                slidesPerView: '7'
+            }
         }
     });
 
