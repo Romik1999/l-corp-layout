@@ -1,0 +1,47 @@
+@import "../../scss/colors";
+
+.page-title {
+  color: $white;
+  font-size: 114px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 105%;
+  margin-top: 0;
+  margin-bottom: 80px;
+
+  @media screen and (max-width: 1290px) {
+    font-size: 100px;
+    margin-bottom: 70px;
+  }
+  @media screen and (max-width: 1025px) {
+    font-size: 80px;
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 769px) {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 370px) {
+    font-size: 35px;
+  }
+
+  & span{
+    &:nth-child(2),
+    &:nth-child(3){
+      display: inline-flex;
+      width: 40px;
+      height: 40px;
+      background: $green;
+      border-radius: 50%;
+
+      @media screen and (max-width: 1025px) {
+        width: 30px;
+        height: 30px;
+      }
+      @media screen and (max-width: 769px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

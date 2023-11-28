@@ -1,60 +1,30 @@
 <section class="hero">
     <div class="cont">
         <div class="hero__top">
-            <div class="hero__info">
-                <div class="hero__title">
-                    <span>Компьютерный </span>
-                    <span>мастер на дом</span>
-                </div>
-                <div class="hero__subtitle">
-                    Получите <span>скидку 10%</span> за заявку через сайт
-                </div>
-                <div class="hero__advantages">
-                    <div class="hero-advantages">
-                        <div class="hero-advantages__items">
-                            <div class="hero-advantages__item">
-                                <div class="hero-advantages__icon">
-                                    <img src="./img/advantages-1.svg">
-                                </div>
-                                <div class="hero-advantages__text">
-                                    Выезд мастера за 30 минут
-                                </div>
-                            </div>
-                            <div class="hero-advantages__item">
-                                <div class="hero-advantages__icon">
-                                    <img src="./img/advantages-2.svg">
-                                </div>
-                                <div class="hero-advantages__text">
-                                    Чек, договор и гарантия
-                                </div>
-                            </div>
-                            <div class="hero-advantages__item">
-                                <div class="hero-advantages__icon">
-                                    <img src="./img/advantages-3.svg">
-                                </div>
-                                <div class="hero-advantages__text">
-                                    Защита ваших данных
-                                </div>
-                            </div>
-                            <div class="hero-advantages__item">
-                                <div class="hero-advantages__icon">
-                                    <img src="./img/advantages-4.svg">
-                                </div>
-                                <div class="hero-advantages__text">
-                                    Диагностика и выезд мастера 0 руб
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__image">
-                <img src="./img/hero-img.png" alt="hero">
-            </div>
+            @@include('page-title/page-title.html', {pageTitleClass: 'hero__title', pageTitleText: 'Разработка cайтов и&nbsp;интерфейсов'})
+            @@include('page-text/page-text.html', {pageTextClass: 'hero__text', pageText: 'Digital experience — это акцент на знаниях, которые мы накопили. Понимаем, как эмоции в digital становятся впечатлениями, а рациональный результат взаимодействия превращается в потребительский опыт.'})
         </div>
-
-        <div class="hero__form">
-            @@include('form/form.html', {customClass: 'form--grey'})
+        <picture class="hero__img">
+            <img src="./img/hero/hero-1.png" alt="hero-image">
+        </picture>
+        <picture class="hero__video">
+            <img src="./img/hero/hero-2.png" alt="hero-image-2">
+        </picture>
+        <div class="hero__bottom">
+            <div class="hero__info">
+                <div class="hero__info__item">
+                    <span>130</span>
+                    <span>готовых проектов</span>
+                </div>
+                <div class="hero__info__item">
+                    <span>6</span>
+                    <span>лет успешной работы</span>
+                </div>
+            </div>
+            <div class="hero__phone">
+                РФ: 8 (800) 500 07 33
+                <img src="./img/header/phone-icon.svg" alt="phone-icon">
+            </div>
         </div>
     </div>
 </section>

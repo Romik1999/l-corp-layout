@@ -13,31 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // const casesLine = new Swiper('.cases-slider', {
-    //     slidesPerView: 7,
-    //     spaceBetween: 75,
-    //     loop: true,
-    //     breakpoints: {
-    //         300: {
-    //             slidesPerView: 2
-    //         },
-    //         576: {
-    //             slidesPerView: 3
-    //         },
-    //         768: {
-    //             slidesPerView: 5,
-    //             autoplay: {
-    //                 enabled: true,
-    //                 delay: 1,
-    //             },
-    //             speed: 5000,
-    //         },
-    //         1025: {
-    //             slidesPerView: 7
-    //         }
-    //     }
-    // });
-
     const slider = document.querySelector('.cases-slider');
     const sl = new Swiper(slider, {
         loop: true,
