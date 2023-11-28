@@ -14,14 +14,35 @@
 
 <main>
     @@include('page-top/page-top.html', {
-    pageTitleClass: 'page-top__title',
-    pageTitleText: 'Веб‑разработка<br> и&nbsp;интеграции',
-    pageTextClass: 'page-top__text',
-    pageText: 'Создаем высоконагруженные масштабируемые веб‑сервисы, построенные на современных технологиях и фреймворках.',
-    pageTopImgPath: 'development/development-1.png',
-    pageTopImgAlt: 'Веб‑разработка и интеграции'
+        pageTitleClass: 'page-top__title',
+        pageTitleText: 'Веб‑разработка<br> и&nbsp;интеграции',
+        pageTextClass: 'page-top__text',
+        pageText: 'Создаем высоконагруженные масштабируемые веб‑сервисы, построенные на современных технологиях и фреймворках.',
+        pageTopImgPath: 'development/development-1.png',
+        pageTopImgAlt: 'Веб‑разработка и интеграции'
     })
     @@include('how/how.html')
+    @@include('cases-table/cases-table.html', {
+        casesTableImgPath1: 'cases-table/cases-table-1.png',
+        casesTableTitle1: 'Интернет-магазин',
+        casesTableSubTitle1: 'Вывод вашего сайта в ТОП поисковой выдачи',
+        casesTablePrice1: '24 900',
+
+        casesTableImgPath2: 'cases-table/cases-table-2.png',
+        casesTableTitle2: 'Сайт компании',
+        casesTableSubTitle2: 'Ваши рекламные объявления в поисковой выдаче',
+        casesTablePrice2: '24 900',
+
+        casesTableImgPath3: 'cases-table/cases-table-3.png',
+        casesTableTitle3: 'Лендинг',
+        casesTableSubTitle3: 'Полное ведение социальных сетей ',
+        casesTablePrice3: '9 900',
+
+        casesTableImgPath4: 'cases-table/cases-table-4.png',
+        casesTableTitle4: 'App разработка',
+        casesTableSubTitle4: 'Улучшение репутации вашей компании в интернете',
+        casesTablePrice4: '29 900',
+    })
     @@include('feedback/feedback.html')
 </main>
 

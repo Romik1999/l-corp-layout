@@ -1,0 +1,30 @@
+@import "../../scss/colors.scss";
+
+.cases-table {
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 18px;
+  }
+
+  &__item {
+    &--cols {
+      &-1 {
+        grid-column: span 1;
+      }
+
+      &-2 {
+        grid-column: span 2;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1025px) {
+    font-size: 18px;
+  }
+}
+
+.table-item {
+
+}
