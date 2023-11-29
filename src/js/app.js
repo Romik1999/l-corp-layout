@@ -39,112 +39,19 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const priceSlider = new Swiper('.price-table', {
-        loop: false,
-        pagination: {
-            el: '.price-table__pagination',
-        },
+
+    const swiper = new Swiper('.mega-swiper', {
+        loop: true,
+        spaceBetween: 20,
         navigation: {
-            nextEl: '.price-table__arrow--next',
-            prevEl: '.price-table__arrow--prev',
-            clickable: true,
+            nextEl: '.mega-swiper__arrow--next',
+            prevEl: '.mega-swiper__arrow--prev',
         },
-        breakpoints: {
-            300: {
-                slidesPerView: 1,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
-            },
-            350: {
-                slidesPerView: 2,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
-            },
-            576: {
-                slidesPerView: 3,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
-            },
-            670: {
-                slidesPerView: 4,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
-            },
-            769: {
-                slidesPerView: 5,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
-            },
-            860: {
-                slidesPerView: 7,
-                grid: {
-                    rows: 2,
-                    fill: "row"
-                },
-            },
-        }
+        pagination: {
+            el: '.mega-swiper__pagination',
+        },
     });
 
-    const brandsSlider = new Swiper('.brands-slider', {
-        loop: false,
-        pagination: {
-            el: '.brands-slider__pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.brands-slider__arrow--next',
-            prevEl: '.brands-slider__arrow--prev',
-        },
-        breakpoints: {
-            300: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-                grid: {
-                    rows: 4,
-                    fill: "row"
-                },
-            },
-            450: {
-                slidesPerView: 3,
-                spaceBetween: 10,
-                grid: {
-                    rows: 4,
-                    fill: "row"
-                },
-            },
-            769: {
-                slidesPerView: 5,
-                spaceBetween: 15,
-                grid: {
-                    rows: 4,
-                    fill: "row"
-                },
-            },
-        }
-    });
-
-    let priceButton = document.querySelector('.price__button');
-    if (priceButton) {
-        let priceRows = document.querySelectorAll('.price__row--hidden');
-        if (priceRows) {
-            priceButton.addEventListener('click', () => {
-                priceRows.forEach(priceRow => {
-                    priceRow.classList.remove(('price__row--hidden'));
-                })
-                priceButton.classList.add('active')
-            });
-        }
-    }
 
     // функция для модалки
 

@@ -1,0 +1,54 @@
+<section class="mega-slider">
+    <div class="cont">
+        <div class="mega-slider__top">
+            @@include('section-title/section-title.html', {sectionTitleClass: 'mega-slider__title', sectionTitleText: 'Разрабатываем сайты, которые создают сильный образ бренда'})
+            <div class="mega-slider__text">
+                Придумаем, каким будет ваш будущий продукт. Проведем все необходимые исследования, выстроим user stories и информационную архитектуру сервиса, разработаем прототипы и создадим удобный интерфейс.
+            </div>
+        </div>
+        <div class="mega-slider__swiper">
+            <picture class="mega-slider__bg">
+                <img src="./img/mega-slider/mega-slider-bg.svg" alt="vase">
+            </picture>
+            <div class="swiper mega-swiper">
+                <div class="swiper-wrapper mega-swiper__items">
+                    <div class="swiper-slide mega-swiper__item">
+                        <picture class="mega-swiper__img">
+                            <img src="./img/mega-slider/mega-slider-1.png" alt="mega-slider-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide mega-swiper__item">
+                        <picture class="mega-swiper__img">
+                            <img src="./img/mega-slider/mega-slider-1.png" alt="mega-slider-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide mega-swiper__item">
+                        <picture class="mega-swiper__img">
+                            <img src="./img/mega-slider/mega-slider-1.png" alt="mega-slider-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide mega-swiper__item">
+                        <picture class="mega-swiper__img">
+                            <img src="./img/mega-slider/mega-slider-1.png" alt="mega-slider-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide mega-swiper__item">
+                        <picture class="mega-swiper__img">
+                            <img src="./img/mega-slider/mega-slider-1.png" alt="mega-slider-1">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide mega-swiper__item">
+                        <picture class="mega-swiper__img">
+                            <img src="./img/mega-slider/mega-slider-1.png" alt="mega-slider-1">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div class="mega-swiper__bottom">
+                @@include('swiper-arrow/swiper-arrow--prev.html', {customClass: 'mega-swiper__arrow mega-swiper__arrow--prev'})
+                @@include('swiper-pagination/swiper-pagination.html', {customClass: 'mega-swiper__pagination'})
+                @@include('swiper-arrow/swiper-arrow--next.html', {customClass: 'mega-swiper__arrow mega-swiper__arrow--next'})
+            </div>
+        </div>
+    </div>
+</section>
