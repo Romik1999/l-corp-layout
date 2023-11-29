@@ -12,6 +12,18 @@
     padding-bottom: 15px;
   }
 
+  &__title {
+    margin-bottom: 80px;
+
+    @media screen and (max-width: 1025px) {
+      margin-bottom: 60px;
+      padding: 0 30px;
+      box-sizing: border-box;
+    }
+    @media screen and (max-width: 769px) {
+      margin-bottom: 30px;
+    }
+  }
 
   &__items {
     display: grid;

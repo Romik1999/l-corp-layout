@@ -2,6 +2,10 @@
   padding-bottom: 25px;
 }
 
+.cases__title {
+  margin-bottom: 80px;
+}
+
 .cases__items {
   display: -ms-grid;
   display: grid;
@@ -167,6 +171,13 @@
     padding-bottom: 6px;
   }
 
+  .cases__title {
+    margin-bottom: 60px;
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
   .cases__items {
     grid-gap: 5px;
     margin-bottom: 40px;
@@ -208,6 +219,10 @@
 @media screen and (max-width: 769px) {
   .cases {
     padding-bottom: 15px;
+  }
+
+  .cases__title {
+    margin-bottom: 30px;
   }
 
   .cases__items {
