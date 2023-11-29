@@ -255,11 +255,8 @@
 
   .scroll-block--list .scroll-block__items {
     width: 100%;
-    row-gap: 50px;
-  }
-
-  .scroll-block--list .scroll-block-item__text {
-    font-size: 16px;
+    max-width: 100%;
+    row-gap: 40px;
   }
 
   .scroll-block__title {
@@ -313,7 +310,17 @@
     row-gap: 30px;
   }
 
+  .scroll-block--list .scroll-block-item {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+
+  .scroll-block--list .scroll-block-item__id {
+    font-size: 16px;
+  }
+
   .scroll-block--list .scroll-block-item__text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }

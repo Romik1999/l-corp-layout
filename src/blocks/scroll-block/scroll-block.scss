@@ -189,7 +189,8 @@
 
         @media screen and (max-width: 1025px) {
           width: 100%;
-          row-gap: 50px;
+          max-width: 100%;
+          row-gap: 40px;
         }
         @media screen and (max-width: 769px) {
           row-gap: 30px;
@@ -199,6 +200,10 @@
       &-item {
         display: flex;
         column-gap: 25px;
+
+        @media screen and (max-width: 769px) {
+          column-gap: 10px;
+        }
 
         &__id {
           width: 30px;
@@ -219,6 +224,10 @@
           line-height: normal;
 
           margin-top: 5px;
+
+          @media screen and (max-width: 769px) {
+            font-size: 16px;
+          }
         }
 
         &__text {
@@ -228,11 +237,8 @@
           font-weight: 400;
           line-height: 160%;
 
-          @media screen and (max-width: 1025px) {
-            font-size: 16px;
-          }
           @media screen and (max-width: 769px) {
-            font-size: 14px;
+            font-size: 16px;
           }
         }
       }
