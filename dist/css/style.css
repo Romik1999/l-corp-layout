@@ -1770,6 +1770,117 @@ main {
   line-height: 160%;
 }
 
+.scroll-block {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.scroll-block--table .scroll-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1640px;
+  width: 100%;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+  padding-left: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.scroll-block--table .scroll-block__top {
+  min-width: 450px;
+  width: 100%;
+}
+
+.scroll-block--table .scroll-block__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 45px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 45px;
+  grid-row-gap: 60px;
+}
+
+.scroll-block--table .scroll-block__items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.scroll-block--table .scroll-block__items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.scroll-block--list .scroll-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1680px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
+}
+
+.scroll-block--list .scroll-block__top {
+  width: 50%;
+}
+
+.scroll-block--list .scroll-block__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 60px;
+  width: 50%;
+}
+
+.scroll-block--list .scroll-block__item:not(:last-child) {
+  padding-bottom: 70px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.scroll-block__title {
+  position: sticky;
+  top: 15px;
+  left: 0;
+}
+
+.scroll-block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 50px;
+}
+
+.scroll-block-item__title {
+  color: #ffffff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.scroll-block-item__text {
+  color: #7E7E7E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
 @media screen and (max-width: 1920px) {
   .header {
     padding: 0 30px;
@@ -1879,6 +1990,17 @@ main {
   .advantages__wrapper {
     row-gap: 145px;
     padding-bottom: 95px;
+  }
+
+  .scroll-block--table .scroll-block__wrapper {
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    padding-left: 0;
+  }
+
+  .scroll-block--table .scroll-block__top {
+    min-width: 350px;
   }
 }
 
@@ -2313,6 +2435,52 @@ main {
 
   .advantages-item__title {
     margin-bottom: 20px;
+  }
+
+  .scroll-block--table .scroll-block__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .scroll-block--table .scroll-block__top {
+    width: 100%;
+  }
+
+  .scroll-block--list .scroll-block__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .scroll-block--list .scroll-block__top {
+    width: 100%;
+  }
+
+  .scroll-block--list .scroll-block__items {
+    width: 100%;
+    row-gap: 50px;
+  }
+
+  .scroll-block--list .scroll-block__item:not(:last-child) {
+    padding-bottom: 50px;
+  }
+
+  .scroll-block__title {
+    position: unset;
+    top: unset;
+  }
+
+  .scroll-block-item {
+    row-gap: 30px;
+  }
+
+  .scroll-block-item__text {
+    font-size: 16px;
   }
 }
 
@@ -2888,6 +3056,42 @@ main {
 
   .advantages-item__text {
     font-size: 16px;
+  }
+
+  .scroll-block--table .scroll-block__top {
+    min-width: auto;
+  }
+
+  .scroll-block--table .scroll-block__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-gap: 0;
+    row-gap: 35px;
+  }
+
+  .scroll-block--list .scroll-block__items {
+    row-gap: 30px;
+  }
+
+  .scroll-block--list .scroll-block__item:not(:last-child) {
+    padding-bottom: 30px;
+  }
+
+  .scroll-block-item {
+    row-gap: 18px;
+  }
+
+  .scroll-block-item__title {
+    font-size: 22px;
+  }
+
+  .scroll-block-item__text {
+    font-size: 14px;
   }
 }
 
