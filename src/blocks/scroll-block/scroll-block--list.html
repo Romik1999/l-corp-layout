@@ -1,0 +1,19 @@
+<section class="scroll-block scroll-block--@@scrollBlockType">
+    <div class="cont">
+        <div class="scroll-block__wrapper">
+            <div class="scroll-block__top">
+                @@include('section-title/section-title.html', {sectionTitleClass: 'scroll-block__title', sectionTitleText: '@@sectionTitleText'})
+            </div>
+            <div class="scroll-block__items">
+                @@loop('scroll-block-item/scroll-block-item--list.html', [
+                { "scrollBlockItemId": "1", "scrollBlockItemText": "Исследование рынка: изучение потребностей, предпочтений и поведения целевой аудитории, анализ конкурентов и тенденций рынка."},
+                { "scrollBlockItemId": "2", "scrollBlockItemText": "Разработка продукции или услуг: создание продуктов или услуг, которые соответствуют потребностям и ожиданиям клиентов."},
+                { "scrollBlockItemId": "3", "scrollBlockItemText": "Ценообразование: определение оптимальной цены продукции или услуги с учетом затрат производства, конкурентной среды и предпочтений потребителей."},
+                { "scrollBlockItemId": "4", "scrollBlockItemText": "Распространение: разработка каналов распределения для доставки продукции или услуг до целевой аудитории."},
+                { "scrollBlockItemId": "5", "scrollBlockItemText": "Продвижение: разработка стратегий рекламы, продвижения и коммуникации, чтобы привлечь внимание клиентов и стимулировать их к покупке."},
+                { "scrollBlockItemId": "6", "scrollBlockItemText": "Анализ и контроль: оценка результатов маркетинговых действий, изучение эффективности стратегий и корректировка подходов для достижения лучших результатов."}
+                ])
+            </div>
+        </div>
+    </div>
+</section>
