@@ -53,6 +53,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
+    const personsSlider = new Swiper('.persons-slider', {
+        loop: true,
+        spaceBetween: 20,
+        pagination: {
+            el: '.persons-slider__pagination',
+        },
+        breakpoints: {
+            300: {
+                slidesPerView: '1',
+                centeredSlides: true,
+                spaceBetween: 5,
+            },
+            576: {
+                slidesPerView: '2'
+            }
+        }
+    });
+
     // функция для модалки
 
     function calcScroll() {
