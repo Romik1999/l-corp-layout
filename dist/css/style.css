@@ -2166,6 +2166,15 @@ main {
   }
 }
 
+.our-clients {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.our-clients__title {
+  margin-bottom: 80px;
+}
+
 @media screen and (max-width: 1920px) {
   .header {
     padding: 0 30px;
@@ -2868,6 +2877,10 @@ main {
   .mega-swiper__arrow--next {
     right: -80px;
   }
+
+  .our-clients__title {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -3567,6 +3580,10 @@ main {
 
   .mega-swiper__arrow {
     display: none;
+  }
+
+  .our-clients__title {
+    margin-bottom: 35px;
   }
 }
 

@@ -1,0 +1,35 @@
+@import "../../scss/colors.scss";
+
+.cases {
+  &-line {
+    padding-bottom: 45px;
+
+    @media screen and (max-width: 1025px) {
+      padding-bottom: 6px;
+    }
+  }
+
+  &-slider {
+    &__item {
+      display: flex;
+      justify-content: center;
+      height: unset !important;
+      text-align: center;
+
+      &:hover{
+        & img{
+          filter: brightness(100%);
+        }
+      }
+
+      & img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        filter: brightness(40%);
+        transition: 0.2s;
+      }
+    }
+  }
+}
+

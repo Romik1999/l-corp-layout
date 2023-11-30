@@ -20,14 +20,15 @@
         pageText: 'Дизайн является важной частью любого сайта, и от того, насколько профессионально он выполнен, зависит успешность проекта.',
         pageTopImgPath: 'design/design-1.png',
     })
+
+    @@include('mega-slider/mega-slider.html')
+
     @@include('scroll-block/scroll-block.html', {
         'scrollBlockType': 'table',
         'sectionTitleText': 'Элементы проектирования',
         'data': '{ "scrollBlockItemTitle": "Аналитика", "scrollBlockItemText": "Выявляем цели и критерии успеха продукта. Собираем данные, проводим глубинные интервью, анализируем полученную информацию и формулируем выводы о продукте, пользователях и их поведении." },{ "scrollBlockItemTitle": "Проектирование", "scrollBlockItemText": "Генерируем идеи, создаем прототипы и тестируем их в UX‑лаборатории для определения наиболее эффективных решений." },{ "scrollBlockItemTitle": "Дизайн", "scrollBlockItemText": "Создаем уникальную дизайн‑концепцию. Дарим эмоции и наполняем эстетикой уже проверенные решения." },{ "scrollBlockItemTitle": "Тестирование", "scrollBlockItemText": "Проверяем принятые решения на пользователях, выявляем и устраняем недочеты до момента разработки." },{ "scrollBlockItemTitle": "Поддержка проекта", "scrollBlockItemText": "Чтобы поддерживать свое превосходство перед конкурентами, продукт должен постоянно развиваться. С этой целью мы его планомерно улучшаем: совершенствуем и расширяем уже существующие функции." }'
     })
-
-    @@include('mega-slider/mega-slider.html')
-
+    @@include('our-clients/our-clients.html')
     @@include('cases/cases-with-title.html')
     @@include('services/services.html')
     @@include('feedback/feedback.html')
