@@ -1,4 +1,5 @@
 .cases {
+  padding-top: 100px;
   padding-bottom: 25px;
 }
 
@@ -169,6 +170,7 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 6px;
+    padding-top: 70px;
   }
 
   .cases__title {
@@ -219,6 +221,7 @@
 @media screen and (max-width: 769px) {
   .cases {
     padding-bottom: 15px;
+    padding-top: 35px;
   }
 
   .cases__title {

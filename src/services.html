@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Другие услуги</title>
+</head>
+<body>
+
+@@include('header/header.html')
+
+<main>
+    @@include('page-top/page-top.html', {
+        pageTitleClass: 'page-top__title',
+        pageTitleText: 'Другие услуги',
+        pageTextClass: 'page-top__text',
+        pageText: 'Дизайн является важной частью любого сайта, и от того, насколько профессионально он выполнен, зависит успешность проекта.',
+        pageTopImgPath: 'services-page/services-1.png',
+    })
+
+    @@include('scroll-block/scroll-block.html', {
+        'scrollBlockType': 'items',
+        'scrollBlockBorder': 'border',
+        'sectionTitleText': 'App разработка',
+        'data': '{ "scrollBlockItemTitle": "Frontend-разработка", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS." },{ "scrollBlockItemTitle": "Backend-разработка", "scrollBlockItemText": "Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений." }'
+    })
+
+    @@include('scroll-block/scroll-block.html', {
+        'scrollBlockType': 'items',
+        'scrollBlockBorder': 'border',
+        'sectionTitleText': 'Разработка сайтов',
+        'data': '{"scrollBlockItemTitle": "Frontend-разработка", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS."}, {"scrollBlockItemTitle": "Backend-разработка", "scrollBlockItemText": "Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений."}, {"scrollBlockItemTitle": "QA-исследования", "scrollBlockItemText": "Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов."}, {"scrollBlockItemTitle": "Интеграции", "scrollBlockItemText": "Реализуем сложные интеграции с внешними сервисами в публичном и приватном сетевом окружении. Двусторонний обмен информацией с системами эквайринга, специфическими банковскими сервисами, CRM и шинами данных по различным протоколам — HTTP, MQTT или SMTP и технологиям — RESTful API, SOAP, XML, Брокеры сообщений."}, {"scrollBlockItemTitle": "1С-Битрикс", "scrollBlockItemText": "Являемся сертифицированными партнерами компании 1С‑Битрикс. Ведем разработку e‑commerce сервисов и корпоративных порталов на основе CMS 1C‑Bitrix."}'
+    })
+
+    @@include('scroll-block/scroll-block.html', {
+        'scrollBlockType': 'items',
+        'scrollBlockBorder': 'border',
+        'sectionTitleText': 'Маркетинговое продвижение',
+        'data': '{"scrollBlockItemTitle": "Стратегия", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS."}, {"scrollBlockItemTitle": "Бренд", "scrollBlockItemText": "Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений."}, {"scrollBlockItemTitle": "QA-Продвижение", "scrollBlockItemText": "Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов."}, {"scrollBlockItemTitle": "Продажи", "scrollBlockItemText": "Реализуем сложные интеграции с внешними сервисами в публичном и приватном сетевом окружении. Двусторонний обмен информацией с системами эквайринга, специфическими банковскими сервисами, CRM и шинами данных по различным протоколам — HTTP, MQTT или SMTP и технологиям — RESTful API, SOAP, XML, Брокеры сообщений."}'
+    })
+
+    @@include('scroll-block/scroll-block.html', {
+        'scrollBlockType': 'items',
+        'scrollBlockBorder': 'border',
+        'sectionTitleText': 'СЕО Оптимизация',
+        'data': '{"scrollBlockItemTitle": "Стратегия", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS."}, {"scrollBlockItemTitle": "Аналитика", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS."}, {"scrollBlockItemTitle": "Работа с ключами", "scrollBlockItemText": "Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений."}, {"scrollBlockItemTitle": "Еще что-то", "scrollBlockItemText": "Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов."}'
+    })
+
+    @@include('scroll-block/scroll-block.html', {
+        'scrollBlockType': 'items',
+        'scrollBlockBorder': 'border',
+        'sectionTitleText': 'Аналитика',
+        'data': '{"scrollBlockItemTitle": "А/Б Тест", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS."}'
+    })
+
+    @@include('scroll-block/scroll-block.html', {
+        'scrollBlockType': 'items',
+        'scrollBlockBorder': 'border',
+        'sectionTitleText': 'Дизайн',
+        'data': '{"scrollBlockItemTitle": "Аналитика", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS."}, {"scrollBlockItemTitle": "Работа с ключами", "scrollBlockItemText": "Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений."}, {"scrollBlockItemTitle": "Еще что-то", "scrollBlockItemText": "Контролируем качество продуктов на всех стадиях разработки и внедрения. Покрываем код тестами, проводим функциональное и приемочное тестирование. Используем как мануальный, так и автоматизированный подход. Анализируем поведение highload‑сервисов выявляя проблемные места посредством нагрузочного тестирования и применения специальных сервисов."}'
+    })
+
+    @@include('scroll-block/scroll-block.html', {
+        'scrollBlockType': 'items',
+        'scrollBlockBorder': 'border',
+        'sectionTitleText': 'Дизайн',
+        'data': '{"scrollBlockItemTitle": "UI/UX", "scrollBlockItemText": "Создаем SPA‑приложения с серверным рендерингом на основе React‑фреймворков Next.js, Angular и Vue.js. Интегрируем приложения в backend‑часть с помощью RESTful API. Оптимизируем Webpack c пре‑ и постпроцессингом CSS и JS."}, {"scrollBlockItemTitle": "Дизайн сайтов", "scrollBlockItemText": "Выполняем архитектурную backend‑разработку на современных и безопасных технологиях и фреймворках. Используем собственную компонентную базу для разных отраслевых направлений — недвижимость, банки и интеграции с CRM. Используем микросервисную архитектуру для гибкого масштабирования веб‑приложений."}'
+    })
+
+    @@include('cases/cases-with-title.html')
+    @@include('services/services.html')
+    @@include('feedback/feedback.html')
+</main>
+
+@@include('footer/footer.html')
+@@include('modal/modal.html')
+
+<script src="libs/swiper/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

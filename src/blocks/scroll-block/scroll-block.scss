@@ -127,9 +127,15 @@
 
         @media screen and (max-width: 1025px) {
           width: 100%;
-          row-gap: 50px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+          grid-column-gap: 40px;
+          grid-row-gap: 70px;
         }
         @media screen and (max-width: 769px) {
+          display: flex;
+          flex-direction: column;
           row-gap: 30px;
         }
       }
@@ -140,10 +146,48 @@
           border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
           @media screen and (max-width: 1025px) {
-            padding-bottom: 50px;
+            padding-bottom: 0;
+            border-bottom: none;
+          }
+        }
+      }
+
+      &-item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+
+        @media screen and (max-width: 1025px) {
+          row-gap: 30px;
+        }
+        @media screen and (max-width: 769px) {
+          row-gap: 18px;
+        }
+
+        &__title {
+          color: $white;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          @media screen and (max-width: 769px) {
+            font-size: 22px;
+          }
+        }
+
+        &__text {
+          color: #7E7E7E;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+
+          @media screen and (max-width: 1025px) {
+            font-size: 16px;
           }
           @media screen and (max-width: 769px) {
-            padding-bottom: 30px;
+            font-size: 14px;
           }
         }
       }
@@ -245,7 +289,6 @@
     }
   }
 
-
   &__title {
     position: sticky;
     top: 15px;
@@ -257,6 +300,15 @@
     }
   }
 
-  @media screen and (max-width: 825px) {
+  &--border {
+    padding: 90px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    @media screen and (max-width: 1025px) {
+      padding: 60px 30px;
+    }
+    @media screen and (max-width: 769px) {
+      padding: 40px 15px;
+    }
   }
 }
