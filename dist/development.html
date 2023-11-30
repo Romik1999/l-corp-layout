@@ -82,7 +82,7 @@
 
         <div class="page-text page-top__text">Создаем высоконагруженные масштабируемые веб‑сервисы, построенные на современных технологиях и фреймворках.</div>
 
-        <picture class="page-top__img">
+        <picture class="page-top__img page-top__img--@@pageTopImgClass">
             <img src="./img/development/development-1.png" alt="Веб‑разработка и интеграции">
         </picture>
     </div>
@@ -236,51 +236,14 @@
     <div class="cont">
         <div class="advantages__wrapper">
             <div class="advantages__top">
-                <h2 class="section-title advantages__title">Создаем, продвигаем и технически поддерживаем онлайн-магазины</h2>
+                <h2 class="section-title advantages__title">@@sectionTitleText</h2>
 
                 <div class="advantages__text">
-                    Наше агентство специализируется на разработке интернет-магазинов. Реализуем сложные проекты,
-                    интеграции с 1С, SAP и другими системами бухгалтерского и складского учета, внедряем нестандартный
-                    функционал, запускаем программы лояльности.
+                    @@advantagesText
                 </div>
             </div>
             <div class="advantages__items">
-                <div class="advantages__item">
-                    <div class="advantages-item">
-                        <picture class="advantages-item__img">
-                            <img src="./img/advantages/advantage-1.png" alt="Бeз шаблонов">
-                        </picture>
-                        <div class="advantages-item__title">Бeз шаблонов</div>
-                        <div class="advantages-item__text">
-                            Максимально увеличиваем число заявок в рамках заданного бюджета. Приносим заявки в первый
-                            месяц.
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages-item">
-                        <picture class="advantages-item__img">
-                            <img src="./img/advantages/advantage-2.png" alt="Поддержка">
-                        </picture>
-                        <div class="advantages-item__title">Поддержка</div>
-                        <div class="advantages-item__text">
-                            Максимально увеличиваем число заявок в рамках заданного бюджета. Приносим заявки в первый
-                            месяц.
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages-item">
-                        <picture class="advantages-item__img">
-                            <img src="./img/advantages/advantage-3.png" alt="Юридические гарантии">
-                        </picture>
-                        <div class="advantages-item__title">Юридические гарантии</div>
-                        <div class="advantages-item__text">
-                            Напрямую увеличиваем доход компании и улучшаем впечатление клиентов. Соединяем комплексный
-                            маркетинг с продажами.
-                        </div>
-                    </div>
-                </div>
+                @@loop('advantages-item/advantages-item.html', [@@data])
             </div>
         </div>
     </div>
