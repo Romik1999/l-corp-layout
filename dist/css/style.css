@@ -1441,6 +1441,11 @@ main {
   transition: 0.2s;
 }
 
+.cases-slider--table .cases-slider__item img {
+  max-width: 320px;
+  width: 100%;
+}
+
 .how {
   padding-top: 55px;
   padding-bottom: 55px;
@@ -2897,6 +2902,10 @@ main {
 
   .cases-line {
     padding-bottom: 6px;
+  }
+
+  .cases-slider--table .cases-slider__item img {
+    max-width: 200px;
   }
 
   .how__wrapper {

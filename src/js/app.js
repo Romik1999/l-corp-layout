@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    const slider = document.querySelector('.cases-slider');
+    const slider = document.querySelector('.cases-slider--line');
     const sl = new Swiper(slider, {
         loop: true,
         speed: 5000,
@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const personsSlider = new Swiper('.persons-slider', {
-        loop: true,
         spaceBetween: 20,
         pagination: {
             el: '.persons-slider__pagination',
@@ -62,11 +61,42 @@ document.addEventListener('DOMContentLoaded', function () {
         breakpoints: {
             300: {
                 slidesPerView: '1',
-                centeredSlides: true,
                 spaceBetween: 5,
+                loop: true,
             },
             576: {
+                loop: false,
                 slidesPerView: '2'
+            }
+        }
+    });
+
+
+    const sliderTable = document.querySelector('.cases-slider--table');
+    const slTable = new Swiper(sliderTable, {
+        speed: 5000,
+        autoplay: {
+            enabled: true,
+            delay: 1,
+        },
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 50,
+        breakpoints: {
+            300: {
+                slidesPerView: '2',
+                grid: {
+                    rows: 1,
+                    fill: 'row'
+                },
+            },
+            576: {
+                slidesPerView: '3',
+                grid: {
+                    rows: 2,
+                    fill: 'row'
+                },
             }
         }
     });

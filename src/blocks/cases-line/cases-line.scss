@@ -30,6 +30,17 @@
         transition: 0.2s;
       }
     }
+
+    &--table{
+      & .cases-slider__item img{
+        max-width: 320px;
+        width: 100%;
+
+        @media screen and (max-width: 1025px) {
+          max-width: 200px;
+        }
+      }
+    }
   }
 }
 
