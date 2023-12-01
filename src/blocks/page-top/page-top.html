@@ -1,9 +1,13 @@
 <section class="page-top">
     <div class="cont">
         @@include('page-title/page-title.html', {pageTitleClass: '@@pageTitleClass', pageTitleText: '@@pageTitleText'})
-        @@include('page-text/page-text.html', {pageTextClass: '@@pageTextClass', pageText: '@@pageText'})
-        <picture class="page-top__img page-top__img--@@pageTopImgClass">
-            <img src="./img/@@pageTopImgPath" alt="@@pageTopImgAlt">
-        </picture>
+        @@if (pageText !== ''){
+            @@include('page-text/page-text.html', {pageTextClass: '@@pageTextClass', pageText: '@@pageText'})
+        }
+        @@if (pageTopImgPath !== ''){
+            <picture class="page-top__img page-top__img--@@pageTopImgClass">
+                <img src="./img/@@pageTopImgPath" alt="@@pageTopImgAlt">
+            </picture>
+        }
     </div>
 </section>
